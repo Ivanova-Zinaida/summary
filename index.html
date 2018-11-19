@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Резюме</title>
@@ -11,8 +11,10 @@
  		Вакансия: Junior Frontend Developer
  	</h1>
  	<div class="description">
- 		<img src="img/IMG-20180519-WA0269.jpg" alt="Иванова Зинаида">
- 		<div class="text">
+ 		<div class="left">
+ 			<img src="img/IMG-20180519-WA0269.jpg" alt="Иванова Зинаида">
+ 		</div>
+ 		<div class="text-right">
  			<p>Имя: Иванова Зинаида</p>
  			<a href="https://github.com/Ivanova-Zinaida">Ссылка на репозиторий в GitHub</a>
  			<p>Oпыт работы: нет</p>
@@ -22,7 +24,7 @@
  		Дата собеседования:
  		<input type="date">
  	</label>
- 	<div class="LevelEndlish">
+ 	<div class="LevelEndlish form-group">
  		<p>Уровень английского:</p>
  		<label >
  			<input type="radio" name="englishLevel">
@@ -42,7 +44,7 @@
  		</label>
  	</div>
  	
- 	<nav>
+ 	<div class="form-group">
  		<p>Ключевые навыки: </p>
  		<ul>
  			<li>HTML</li>
@@ -51,27 +53,25 @@
  			<li>PHP</li>
  			<li>JavaScript</li>
  		</ul>
- 		<input type="text"> <input type="submit" value="Добавить в список">
- 	</nav>
+ 		<input type="text" placeholder="Введите навык..."> <input type="button" value="Добавить в список">
+ 	</div>
  	<br>
-  <div>
+  <div  class="form-group">
   	<span>Коммуникабельность: </span>
- 		<select name="" id="">
- 			<option value="">Очень низкая</option>
- 			<option value="">Низкая</option>
- 			<option value="">Средняя</option>
- 			<option value="">Высокая</option>
- 			<option value="">Слишком высокая</option>	
- 		</select>
- 		
+ 		<select name="sociability" id="sociabilityLevel">
+ 			<option value="veryLow">Очень низкая</option>
+ 			<option value="low">Низкая</option>
+ 			<option value="average">Средняя</option>
+ 			<option value="high">Высокая</option>
+ 			<option value="veryHigh">Слишком высокая</option>	
+ 		</select>	
   </div>
  <br>
-
  	<label >
  		<span>Желаемая з/п</span>
- 		<input type="number" value="40000">
+ 		<input type="number" placeholder="Введите значение...">
  	</label>
- 	<div>
+ 	<div class="form-group">
  		<p>Подходит по критериям:</p>
  		<label><input type="checkbox" name="english">Знание английского</label>
  		<label><input type="checkbox" name="salary">Оклад</label>
