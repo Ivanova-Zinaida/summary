@@ -1,6 +1,27 @@
+body{
+background: linear-gradient(to top left, powderblue, pink);
+font-family: 'Patrick Hand', cursive;
+
+}
+
 .container {
-	width: 980px;
+	background-color: white;
+	padding-left: 15px;
+	max-width: 980px;
 	margin: 0 auto;
+	border-radius: 10px;
+	padding-bottom: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	box-shadow: 5px -3px 8px rgba(249, 192, 232, 0.3);
+	
+}
+.title{
+	text-align: center;
+	font-family: 'Lobster', cursive;
+}
+a{
+	color: 
 }
 .description {
 	margin-bottom: 20px;
@@ -9,31 +30,127 @@
 	display: inline-block;
 	margin-right: 20px;
 }
-.left img {
+.photo {
+	display: block;
 	width: 200px;
 	height: auto;
+	border: 3px solid pink;
+	border-radius: 5px;
+	 -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+	
+}
+.photo:hover.photo{
+	cursor: pointer;
+	border: 3px solid powderblue; 
+	  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
 .text-right{
 	vertical-align: top;
 	display: inline-block;
 }
 li {
-	list-style-type: none;	
+	list-style-type: none;
+	width: 150px;
+	transition: 1s;
+}
+li:hover{
+	text-decoration: underline;
+	color:darkgray;
+	cursor: pointer;
+	font-size: 19px;
 }
 ul li:before{
 	content: "- ";
 }
 label{
-	margin-right: 5px;
+	margin-right: 10px;
+	
 }
-input{
+input, select{
+	font-size: 17px;
+	color:#180128;
+	font-family: 'Lobster', cursive;
+	border:1px solid blueviolet; 
 	margin-left: 5px;
+	padding: 4px;
+	box-shadow: 3px -3px 10px rgba(107, 1, 178, 0.3);
+	outline:none; 
+}
+input:active{
+	border:1px solid darkmagenta;
+	box-shadow: 3px -3px 10px rgba(51, 2, 84, 0.3);
+}
+.button{
 	padding: 5px;
+ 	font-size: 16px;
+	font-family: 'Patrick Hand', cursive;
+	 background-color: blueviolet;
+	 border: 1px solid  powderblue;
+	 border-radius: 4px;
+	cursor: pointer;
+	transition: 2s;
+	box-shadow:none;
+}
+.button:hover {
+	background-color:darkmagenta;
+	border: 1px solid fuchsia;
+}
+.button:active{
+	background-color:fuchsia;
+	border: 1px solid darkmagenta;
+}
+.radio {
+	display: none;
+	border: 2px solid deeppink ;
+	
+}
+.radio-mark {
+	display: inline-block;
+	margin-right: 5px;
+	width: 14px;
+	height: 14px;
+	background-color:deeppink;
+	border: 2px solid blueviolet ;
+	border-radius: 50%;	
+}
+.radio:checked+.radio-mark {
+	width: 8px;
+	height: 8px;
+	border: 5px solid deeppink;
+	background: blueviolet;
+}
+.checkbox{
+	display: none;
+}
+.checkbox-mark{
+	display: inline-block;
+	margin-right: 5px;
+	width: 14px;
+	height: 14px;
+	background-color:deeppink;
+	border: 2px solid blueviolet ;
+	border-radius: 4px;
+	
+}
+.checkbox:checked+.checkbox-mark{
+	width: 8px;
+	height: 8px;
+	border: 5px solid deeppink;
+	background: blueviolet;
+	
 }
 table{
 	border-collapse: collapse;
-	width: 550px;
-	
+	width: 80%;	
+	margin-left: 10%;
 }
 caption{
 	font-weight: 700;
@@ -41,7 +158,8 @@ caption{
 	margin-bottom: 10px;
 }
 table, td, th{
-	border: 1px solid #000;
+	background-color: white;
+	border: 1px solid deeppink;
 }
 td,th{
 	padding: 5px 5px;

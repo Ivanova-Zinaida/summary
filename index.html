@@ -4,15 +4,16 @@
 	<meta charset="UTF-8">
 	<title>Резюме</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Patrick+Hand" rel="stylesheet">
 </head>
 <body>
  <div class="container">
- 	<h1>
+ 	<h1 class="title">
  		Вакансия: Junior Frontend Developer
  	</h1>
  	<div class="description">
  		<div class="left">
- 			<img src="img/IMG-20180519-WA0269.jpg" alt="Иванова Зинаида">
+ 			<img class="photo" src="img/IMG-20180519-WA0269.jpg" alt="Иванова Зинаида">
  		</div>
  		<div class="text-right">
  			<p>Имя: Иванова Зинаида</p>
@@ -27,19 +28,23 @@
  	<div class="LevelEndlish form-group">
  		<p>Уровень английского:</p>
  		<label >
- 			<input type="radio" name="englishLevel">
+ 			<input class="radio" type="radio" name="englishLevel">
+ 			<span class="radio-mark"></span>
  				Плохо
  		</label>
  		<label >
- 			<input type="radio" name="englishLevel">
+ 			<input  class="radio"  type="radio" name="englishLevel">
+ 			<span class="radio-mark"></span>
  				Средне
  		</label>
  		<label >
- 			<input type="radio" name="englishLevel">
+ 			<input  class="radio"  type="radio" name="englishLevel">
+ 			<span class="radio-mark"></span>
  				Хорошо
  		</label>
  		<label >
- 			<input type="radio" name="englishLevel">
+ 			<input  class="radio"  type="radio" name="englishLevel">
+ 			<span class="radio-mark"></span>
  				Превосходно
  		</label>
  	</div>
@@ -53,7 +58,7 @@
  			<li>PHP</li>
  			<li>JavaScript</li>
  		</ul>
- 		<input type="text" placeholder="Введите навык..."> <input type="button" value="Добавить в список">
+ 		<input type="text" placeholder="Введите навык..."> <input class="button" type="button" value="Добавить в список">
  	</div>
  	<br>
   <div  class="form-group">
@@ -73,10 +78,10 @@
  	</label>
  	<div class="form-group">
  		<p>Подходит по критериям:</p>
- 		<label><input type="checkbox" name="english">Знание английского</label>
- 		<label><input type="checkbox" name="salary">Оклад</label>
- 		<label><input type="checkbox" name="skills">Навыки</label>
- 		<label><input type="checkbox" name="person">Сразу видно, что свой человек </label>
+		<label ><input class="checkbox" type="checkbox" name="english"><span class="checkbox-mark"></span>Знание английского</label>
+ 		<label ><input class="checkbox" type="checkbox" name="salary"><span class="checkbox-mark"></span>Оклад</label>
+ 		<label><input class="checkbox" type="checkbox" name="skills"><span class="checkbox-mark"></span>Навыки</label>
+ 		<label><input class="checkbox" type="checkbox" name="person"><span class="checkbox-mark"></span>Сразу видно, что свой человек </label>
  	</div>
  	<br>
  	<table>
