@@ -21,28 +21,28 @@
  			<p>Oпыт работы: нет</p>
  		</div>
  	</div>
- 	<label >
+ 	<label class="group-title">
  		Дата собеседования:
  		<input type="date">
  	</label>
  	<div class="LevelEndlish form-group">
- 		<p>Уровень английского:</p>
- 		<label >
+ 		<p class="group-title">Уровень английского:</p>
+ 		<label class="radio-label">
  			<input class="radio" type="radio" name="englishLevel">
  			<span class="radio-mark"></span>
  				Плохо
  		</label>
- 		<label >
+ 		<label class="radio-label">
  			<input  class="radio"  type="radio" name="englishLevel">
  			<span class="radio-mark"></span>
  				Средне
  		</label>
- 		<label >
+ 		<label class="radio-label">
  			<input  class="radio"  type="radio" name="englishLevel">
  			<span class="radio-mark"></span>
  				Хорошо
  		</label>
- 		<label >
+ 		<label class="radio-label">
  			<input  class="radio"  type="radio" name="englishLevel">
  			<span class="radio-mark"></span>
  				Превосходно
@@ -50,7 +50,7 @@
  	</div>
  	
  	<div class="form-group">
- 		<p>Ключевые навыки: </p>
+ 		<p class="group-title">Ключевые навыки: </p>
  		<ul>
  			<li>HTML</li>
  			<li>CSS</li>
@@ -62,7 +62,7 @@
  	</div>
  	<br>
   <div  class="form-group">
-  	<span>Коммуникабельность: </span>
+  	<span class="group-title">Коммуникабельность: </span>
  		<select name="sociability" id="sociabilityLevel">
  			<option value="veryLow">Очень низкая</option>
  			<option value="low">Низкая</option>
@@ -73,19 +73,20 @@
   </div>
  <br>
  	<label >
- 		<span>Желаемая з/п</span>
+ 		<span class="group-title">Желаемая з/п</span>
  		<input type="number" placeholder="Введите значение...">
  	</label>
  	<div class="form-group">
- 		<p>Подходит по критериям:</p>
-		<label ><input class="checkbox" type="checkbox" name="english"><span class="checkbox-mark"></span>Знание английского</label>
- 		<label ><input class="checkbox" type="checkbox" name="salary"><span class="checkbox-mark"></span>Оклад</label>
- 		<label><input class="checkbox" type="checkbox" name="skills"><span class="checkbox-mark"></span>Навыки</label>
- 		<label><input class="checkbox" type="checkbox" name="person"><span class="checkbox-mark"></span>Сразу видно, что свой человек </label>
+ 		<p class="group-title">Подходит по критериям:</p>
+		<label class="checkbox-label"><input class="checkbox" type="checkbox" name="english"><span class="checkbox-mark"></span>Знание английского</label>
+ 		<label class="checkbox-label"><input class="checkbox" type="checkbox" name="salary"><span class="checkbox-mark"></span>Оклад</label>
+ 		<label class="checkbox-label"><input class="checkbox" type="checkbox" name="skills"><span class="checkbox-mark"></span>Навыки</label>
+ 		<label class="checkbox-label"><input class="checkbox" type="checkbox" name="person"><span class="checkbox-mark"></span>Сразу видно, что свой человек </label>
  	</div>
  	<br>
  	<table>
  		<caption>Образование, курсы и т.п</caption>
+ 		<tbody>
  		<tr >
  			<th>№</th>
  			<th>Сроки обучение</th>
@@ -102,11 +103,12 @@
  			<td>2017</td>
  			<td>ИТМО, Веб-программирование</td>
  		</tr>
- 			<tr>
+ 		<tr>
  			<td>3</td>
  			<td>2018</td>
  			<td>WebCademy, Веб-разработка: frontend and backend</td>
  		</tr>
+ 		</tbody>
  	</table>
  </div>
 </body>
